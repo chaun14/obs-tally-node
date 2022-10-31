@@ -1,0 +1,19 @@
+{
+  "name": "obstallynode",
+  "version": "1.0.0",
+  "description": "tally lights for obs with arduino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "node client.js"
+  },
+  "author": "chaun14",
+  "license": "ISC",
+  "dependencies": {
+    "obs-websocket-js": "^5.0.2",
+    "serialport": "^10.4.0",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3"
+  }
+}
