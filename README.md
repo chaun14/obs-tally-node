@@ -1,6 +1,7 @@
 # obs-tally-node
 A nice OBS tally light system using nodejs &amp; arduino
 
+[Demo video](https://youtube.com/shorts/Ne81Y_jzV8k)
 
 ![tellylight drawio](https://user-images.githubusercontent.com/42867004/199029517-dee0cebc-22c2-441d-b1d3-553a156be4ef.png)
 
