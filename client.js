@@ -1,6 +1,6 @@
 const { io } = require("socket.io-client");
 const { SerialPort } = require("serialport");
-const config = require("./config.example.js");
+const config = require("./config.js");
 
 const currentCamID = config.client.cameraID;
 

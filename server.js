@@ -3,7 +3,7 @@ const { EventSubscription } = require("obs-websocket-js");
 const OBSWebSocket = require("obs-websocket-js").default;
 
 const obs = new OBSWebSocket();
-const config = require("./config.example.js");
+const config = require("./config.js");
 
 const cameras = config.server.cameras;
 let camerasMap = new Map();
