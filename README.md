@@ -11,7 +11,7 @@ A nice OBS tally light system using nodejs &amp; arduino
     - [Server](#1-server)
     - [Client](#2-client)
     - [Arduino](#3-hardware)
-2. [Setup Instructions](#📦-Setup-instructions)
+2. [Setup Instructions](#package-setup-instructions)
 3. [Discord server](#headphones-discord-server)
 
 # :mag: Components 
@@ -21,7 +21,9 @@ The server is connected with the obs instance through the obs websocket plugin
 
 For a source to be recognised as a camera, it is needed to follow the specific name formatting: `CAMERANAMEHEREINCAPS_CAMERAID`
 
-![image](https://user-images.githubusercontent.com/42867004/199024380-555960e6-1fe4-4e58-b4f3-b548ec45eee8.png)*for example, the main camera (id 0) will be named: MAIN_0*
+![image](https://user-images.githubusercontent.com/42867004/199024380-555960e6-1fe4-4e58-b4f3-b548ec45eee8.png)
+
+*for example, the main camera (id 0) will be named: MAIN_0*
 
 The camera with id 0 is triggered everytime a source in caps followed by _0 is shown in a scene
 ![image](https://user-images.githubusercontent.com/42867004/199024724-326c69f2-3854-4fc7-ad40-65486094cd31.png)
@@ -33,12 +35,12 @@ The client is connected through websocket (socket.io) to the server (⚠️ not 
 Each client is assigned an id (check in the server part what the id means) and communicate with an arduino-like controller through serial console (autodetect COM port, self reconnect)
 
 ## 3 Hardware
-The arduino controller wait for data from serial console and change colors following recieved instructions from the client
+The arduino controller waits for data from serial console and change colors following recieved instructions from the client
 
 ![image](https://user-images.githubusercontent.com/42867004/199022512-efd3dbd6-2e95-435c-8eda-3dc9e3d3a043.png)
 ![image](https://user-images.githubusercontent.com/42867004/199023022-f32151b9-89f1-4941-98db-bbaf5ef3cbcb.png)
 
-# 📦 Setup instructions
+# :package: Setup instructions
 Requirements: 
 - Nodejs 16.9.0 or superior (not tested below)
 - An arduino like microcontroller with 2 leds (red & green) + resistor in needed
